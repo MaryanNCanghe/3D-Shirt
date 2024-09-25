@@ -1,13 +1,13 @@
 import express from 'express';
 import * as dotenv from 'dotenv';
-// Import OpenAIApi only if needed in the future
+
 // import { Configuration, OpenAIApi } from 'openai';
 
 dotenv.config();
 
 const router = express.Router();
 
-// You can comment out the OpenAI configuration since you're not using it right now
+// not using it right now
 // const config = new Configuration({
 //   apiKey: process.env.OPENAI_API_KEY,
 // });
@@ -31,7 +31,7 @@ router.route('/').post(async (req, res) => {
     // });
 
     // Temporary placeholder image or message
-    const image = "Base64EncodedPlaceholderImage"; // Replace this with any dummy image data
+    const image = "Base64EncodedPlaceholderImage"; // Replace this with any image data
 
     res.status(200).json({ photo: image });
   } catch (error) {
